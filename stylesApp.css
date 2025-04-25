@@ -1,0 +1,42 @@
+.winky-rough {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+    #title{
+        font-family: "Winky Rough", sans-serif;
+        font-size: 12em;
+        color: rgb(255, 47, 0);
+        margin:0;
+    }
+    #content{
+        width: 30%;
+        height: 25em;
+        border-style: ridge;
+        border-radius: 1em;
+
+        margin-top: 0;
+        margin-left: 34em;
+        padding-top: 2em;
+
+        background: greenyellow;
+    }
+        .font{
+            font-family: "Winky Rough", sans-serif;
+            font-size: 1.5em;
+        }
+        .input{
+            width: 30em;
+            height: 2em;
+            border-radius: 0.5em;
+        }
+        #btn_send_spam{
+            margin-top: 1.5em;
+            border-radius: 0.5em;
+        }

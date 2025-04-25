@@ -1,7 +1,7 @@
 .winky-rough {
     font-family: "Winky Rough", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Puedes cambiar este valor entre 300 y 900 */
+    font-weight: 400;
     font-style: normal;
 }
 body{
@@ -27,14 +27,4 @@ body{
 }
 #btn_spameitor:hover {
     transform: scale(0.95);
-}
-
-
-
-
-
-
-.initial_button{
-    background-color: rgb(49, 209, 97);
-    color:grey;
 }

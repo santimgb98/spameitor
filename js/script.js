@@ -1,11 +1,21 @@
 $(document).ready(function(){
-    $("#btn_spameitor").click(function(){
-        $("#btn_spameitor").toggleClass("initial_button")
-        if($("#btn_spameitor").hasClass("initial_button")){
-            
-        }
 
-
-
+    // Mouse enter into button
+    $("#btn_spameitor").mouseenter(function(){
+        $(this).text("rOTiEmaPS")
     })
+    //Mouse leave to the button
+    $("#btn_spameitor").mouseleave(function(){
+        $(this).text("sPAmEitOR")
+    })
+
+    // Click on the button, enter in page
+    $("#btn_spameitor").click(function(){
+        location.href = "./indexApp.html"
+    })
+
+
+    
+    
+   
 })
