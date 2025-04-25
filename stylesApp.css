@@ -40,3 +40,13 @@ body{
             margin-top: 1.5em;
             border-radius: 0.5em;
         }
+        #aparece{
+            font-family: "Winky Rough", sans-serif;
+            font-size: 2em;
+            display: none;
+        }
+        #btn_return{
+            margin-top: 1.5em;
+            border-radius: 0.5em;
+            display:none;
+        }
