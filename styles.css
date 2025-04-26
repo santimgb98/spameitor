@@ -15,16 +15,16 @@ body{
     height: 3em;
 
     font-family: "Winky Rough", sans-serif;
-    color:rgb(77, 19, 19);
-    font-size: 3.5em;
+    color:rgb(207, 13, 13);
+    font-size: 6em;
     transition: transform 0.05s ease;
 
     border-style: ridge;
-    border-width: 0.2em;
-    border-color: rgb(115, 189, 5);
-    border-radius: 0.5em;
+    border-width: 0.1em;
+    border-color: rgb(255, 0, 0);
+    border-radius: 10em;
 
-    background: greenyellow;
+    background-image: url("./spamer.jpg")
 }
 #btn_spameitor:hover {
     transform: scale(0.95);
