@@ -14,7 +14,6 @@ $(document).ready(function(){
         location.href = "./indexApp.html"
     })
 
-
     $("#btn_send_spam").click(function(){
         $(".font").hide()
         $(".input").hide()

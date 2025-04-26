@@ -16,14 +16,14 @@ body{
         font-family: "Winky Rough", sans-serif;
         font-size: 12em;
         color: rgb(255, 47, 0);
+        
         margin: 0;
     }
     #content{
         width: 35%;
         height: 32em;
-        border-style: ridge;
         border-radius: 1em;
-        border-color: red;
+        border: 0.5em dashed red;
 
         /* Position centrate*/
         position: absolute;
@@ -47,10 +47,11 @@ body{
         .input{
             width: 35em;
             height: 2em;
+            padding-left: 1em;
+            padding-right: 1em;
             border-radius: 0.5em;
+            border: 0.2em dashed red;
 
-
-            border-color: red;
             font-size: 1em;
             color: red;
             background-color: rgb(14, 39, 31);
@@ -59,10 +60,12 @@ body{
         .input_message{
             width: 35em;
             height: 7em;
-            border-radius: 0.5em;
             margin-bottom: 0.9em;
+            padding-left: 1em;
+            padding-right: 1em;
 
-            border-color: red;
+            border-radius: 0.5em;
+            border: 0.2em dashed red;
             font-size: 1em;
             color: red;
             background-color: rgb(14, 39, 31);
