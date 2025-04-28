@@ -1,19 +1,17 @@
 $(document).ready(function(){
 
-    // Mouse enter into button
+    // INITIAL BUTTON // ENTER TO PAGE
     $("#btn_spameitor").mouseenter(function(){
         $(this).text("rOTiEmaPS")
     })
-    //Mouse leave to the button
     $("#btn_spameitor").mouseleave(function(){
-        $(this).text("sPAmEitOR")
+        $(this).text("sPAmEitOr")
     })
-
-    // Click on the button, enter in page
     $("#btn_spameitor").click(function(){
         location.href = "./indexApp.html"
     })
 
+    // CLICKs on the BUTTONS
     $("#btn_send_spam").click(function(){
         $(".font").hide()
         $(".input").hide()
@@ -31,12 +29,35 @@ $(document).ready(function(){
         $("#btn_return").hide();
     })
 
+    // MOUSE MOVES on BUTTONS
+    // send button
     $("#btn_send_spam").mouseenter(function(){
         $(this).text("👻 Send spam 👻")
+        $("#content").css("border-color", "rgb(153, 255, 0)")
+        $(".input").css("border-color", "rgb(153, 255, 0)")
+        $(".input").css("border-color", "rgb(153, 255, 0)")
+        $(".input_message").css("border-color", "rgb(153, 255, 0)")
     })
     $("#btn_send_spam").mouseleave(function(){
         $(this).text("Send spam")
+        $("#content").css("border-color", "rgb(255, 0, 0)")
+        $(".input").css("border-color", "rgb(255, 0, 0)")
+        $(".input_message").css("border-color", "rgb(255, 0, 0)")
     })
+
+    // return button
+    $("#btn_return").mouseenter(function(){
+        $("#content").css("border-color", "rgb(153, 255, 0)")
+    })
+    $("#btn_return").mouseleave(function(){
+        $("#content").css("border-color", "rgb(255, 0, 0)")
+    })
+
+
+    // DATA INTRODUCTION in the INPUTS
+    $("#receiver").local ;function sendSpam(receiver) {
+     $(this)  
+    }
     
    
 })

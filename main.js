@@ -1,11 +1,11 @@
 const nodemailer = require('nodemailer');
 const prompt = require('prompt-sync')();
 
-async function sendSpam(){
+async function sendSpam(receiver, affair, message){
   // Email variables
-  var receiver = prompt("Select the receiver account than gmail: ");
+  /*var receiver = prompt("Select the receiver account than gmail: ");
   var affair = prompt("Enter the affair: ");
-  var message = prompt("Enter the message: ");
+  var message = prompt("Enter the message: ");*/
 
   // Safety loop to avoid being bad
   var numberToMessages = Number(prompt("Enter how many messages you went send to "+receiver+": "));
