@@ -1,5 +1,6 @@
-$(document).ready(function(){
 
+$(document).ready(function(){
+    
     // INITIAL BUTTON // ENTER TO PAGE
     $("#btn_spameitor").mouseenter(function(){
         $(this).text("rOTiEmaPS")
@@ -13,20 +14,13 @@ $(document).ready(function(){
 
     // CLICKs on the BUTTONS
     $("#btn_send_spam").click(function(){
-        $(".font").hide()
-        $(".input").hide()
-        $(".input_message").hide()
-        $("#btn_send_spam").hide()
-        $("#aparece").show();
-        $("#btn_return").show();
+        $(".font, .input, .input_message, # btn_send_spam").hide()
+        $("#aparece, #return").show();
+        
     })
     $("#btn_return").click(function(){
-        $(".font").show()
-        $(".input").show()
-        $(".input_message").show()
-        $("#btn_send_spam").show()
-        $("#aparece").hide();
-        $("#btn_return").hide();
+        $(".font, .input, .input_message, # btn_send_spam").show()
+        $("#aparece, #return").hide();
     })
 
     // MOUSE MOVES on BUTTONS
@@ -35,14 +29,15 @@ $(document).ready(function(){
         $(this).text("👻 Send spam 👻")
         $("#content").css("border-color", "rgb(153, 255, 0)")
         $(".input").css("border-color", "rgb(153, 255, 0)")
-        $(".input").css("border-color", "rgb(153, 255, 0)")
         $(".input_message").css("border-color", "rgb(153, 255, 0)")
+        $("#input_receiver").css("color","rgb(113, 255, 196)");
     })
     $("#btn_send_spam").mouseleave(function(){
         $(this).text("Send spam")
         $("#content").css("border-color", "rgb(255, 0, 0)")
         $(".input").css("border-color", "rgb(255, 0, 0)")
         $(".input_message").css("border-color", "rgb(255, 0, 0)")
+        $("#input_receiver").css("color","rgb(255, 0, 0)");
     })
 
     // return button

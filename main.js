@@ -1,17 +1,17 @@
 const nodemailer = require('nodemailer');
-const prompt = require('prompt-sync')();
+//const prompt = require('prompt-sync')();
 
-async function sendSpam(receiver, affair, message){
+export async function sendSpam(receiver, affair, message, numberToMessages){
   // Email variables
   /*var receiver = prompt("Select the receiver account than gmail: ");
   var affair = prompt("Enter the affair: ");
   var message = prompt("Enter the message: ");*/
 
   // Safety loop to avoid being bad
-  var numberToMessages = Number(prompt("Enter how many messages you went send to "+receiver+": "));
-  while(numberToMessages >= 10 || isNaN(numberToMessages)===true){
-    numberToMessages = Number(prompt("Don't be mean, you can send up to 10 messages: "));
-  }
+  // var numberToMessages = Number(prompt("Enter how many messages you went send to "+receiver+": "));
+  // while(numberToMessages >= 10 || isNaN(numberToMessages)===true){
+  //   numberToMessages = Number(prompt("Don't be mean, you can send up to 10 messages: "));
+  // }
 
   // Transporter settings
   const transporter = nodemailer.createTransport({

@@ -11,18 +11,40 @@
 <body background="./spamer.jpg">
     <h1 id="title">sPAmEitOr</h1>
     <div id="content">
-        <p class="font" id="receiver">Who is the spam for?</p>
-        <input id="input_receiver" class="input" type="text" placeholder="@mail">
-        <p class="font"><u>affair:</u></p>
-        <input class="input" type="text" placeholder="Sorry for the spam...">
-        <p class="font"><u>message:</u></p>
-        <input class="input_message" type="text" placeholder="://">
+
+        <!--A quién se le envía el spam-->
+        <form action="">
+            <label>A quién enviar spam?: </label>
+            <input id="input_receptor" type="text"/>
+        </form>
+        
+        <!--Asunto-->
+        <form action="">
+            <label">Asunto: </label>
+            <input id="input_asunto" type="text"/>
+        </form>
+        
+        <!--Número de mensajes-->
+        <form action="">
+            <label>Número de mensajes: </label>
+            <input id="input_mensajes" type="text"/>
+        </form>
+
+        <!--Mensage-->
+        <form action="">
+            <label>Mensaje: </label>
+            <input id="input_mensaje" type="text"/>
+        </form>
+
+        <!--Send button-->
         <button id="btn_send_spam" type="button">Send spam</button>
 
         <!--Aparece al hacer click en btn_send_spam-->
         <p id="aparece">SPAM ENVIADO</p>
         <button id="btn_return">return</button>
     </div>
+    <script>import{sendSpam} from "./main"</script>
     <script src="./js/script.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

@@ -14,16 +14,17 @@ body{
 }
     #title{
         font-family: "Winky Rough", sans-serif;
-        font-size: 12em;
+        font-size: 7em;
         color: rgb(255, 47, 0);
         
-        margin: 0;
+        margin-top:0em;
     }
     #content{
-        width: 35%;
+        width: 50%;
         height: 32em;
         border-radius: 1em;
-        border: 0.5em dashed red;
+        border: 0.3em dashed red;
+        margin-top: -3em;
 
         /* Position centrate*/
         position: absolute;
@@ -35,12 +36,14 @@ body{
     }
         #receiver{
             font-family: "Winky Rough", sans-serif;
-            font-size: 2em;
+            font-size: 1.5em;
         }
         .font{
             font-family: "Winky Rough", sans-serif;
             font-size: 1.5em;
             color: white;
+            text-align: left;
+            margin-left: 6em;
         }
 
         /*Entradas de correo y asunto*/
@@ -79,7 +82,7 @@ body{
             margin-top: 0.6em;
             border-radius: 0.5em;
 
-            width: 10em;
+            width: 12em;
             height: 2em;
             font-size: 1.6em;
         }
