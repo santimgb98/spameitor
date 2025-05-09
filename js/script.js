@@ -1,33 +1,35 @@
-import { sendSpam } from "../main"
 
-$(document).ready(function(){
-    
-    // INITIAL BUTTON // ENTER TO PAGE
-    $("#btn_spameitor").mouseenter(()=>{
-        $(this).text("rOTiEmaPS")
-    })
-    $("#btn_spameitor").mouseleave(()=>{
-        $(this).text("sPAmEitOr")
-    })
-    $("#btn_spameitor").click(()=>{
-        location.href = "./indexApp.html"
-    })
+// No entiendo por que si importo una función externa
+// se me van los eventos guardados en el JQuery
 
+// Esta función =>> import { sendSpam } from "../main.js";
+
+$(document).ready(()=>{
     // CLICKs on the BUTTONS
     $("#btn_send_spam").click(()=>{
-        $(".q_form, .indicador,#btn_send_spam").hide()
+        $(".q_form, .indicador, #btn_send_spam").hide()
         $("#aparece, #btn_return").show();
 
-        const receptor = $("id='input_receptor'").val();
-        const asunto = $("id='input_asunto'").val();
-        const mensaje = $("id='input_mensaje'").val();
-        const n_mensajes = $("id='input_mensajes'").val();
-        sendSpam(receptor,asunto,mensaje,n_mensajes);
+        const receptor = $("#input_receptor").val();
+        const asunto = $("#input_asunto").val();
+        const mensaje = $("#input_mensaje").val();
+        const n_mensajes = $("#input_mensajes").val();
+
+        try{
+            sendSpam(receptor,asunto,mensaje,n_mensajes);
+        }catch(error){
+            $(".q_form, .indicador, #btn_send_spam").show()
+            $("#aparece, #btn_return").hide();
+            setTimeout(()=>{
+                alert(`Se ha producido el siguiente error: "${error}`);
+            },300);
+        }
+
     })
     $("#btn_return").click(()=>{
         $(".q_form, .indicador, #btn_send_spam").show()
         $("#aparece, #btn_return").hide();
-    })
+    });
 
     // MOUSE MOVES on BUTTONS
     // send button
@@ -54,4 +56,6 @@ $(document).ready(function(){
         $("#content").css("border-color", "rgb(255, 0, 0)")
     })
 
-})
+});
+
+
