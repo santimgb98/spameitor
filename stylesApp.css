@@ -8,8 +8,6 @@ body{
     text-align: center;
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
     
 }
     #title{
@@ -21,54 +19,42 @@ body{
     }
     #content{
         width: 50%;
-        height: 32em;
+        height: 50%;
         border-radius: 1em;
         border: 0.3em dashed red;
-        margin-top: -3em;
 
-        /* Position centrate*/
         position: absolute;
-        top: 60%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        
         background-image: url("./spamer.jpg");
+
+        align-content: center;
     }
-        #receiver{
-            font-family: "Winky Rough", sans-serif;
-            font-size: 1.5em;
+        .q_form{
+            display: flex;
+            width: 80%;
+            margin-bottom: 5%;
         }
-        .font{
+        .indicador{
+            width: 40%;
             font-family: "Winky Rough", sans-serif;
-            font-size: 1.5em;
+            font-size: 130%;
             color: white;
             text-align: left;
-            margin-left: 6em;
+
+            margin-left: 20%;
+            margin-right: 5%;
         }
 
         /*Entradas de correo y asunto*/
         .input{
-            width: 35em;
-            height: 2em;
-            padding-left: 1em;
-            padding-right: 1em;
+            width: 75%;
+            font-family: "Winky Rough", sans-serif;
             border-radius: 0.5em;
             border: 0.2em dashed red;
 
-            font-size: 1em;
-            color: red;
-            background-color: rgb(14, 39, 31);
-        }
-        /*Entrada de mensaje*/
-        .input_message{
-            width: 35em;
-            height: 7em;
-            margin-bottom: 0.9em;
-            padding-left: 1em;
-            padding-right: 1em;
-
-            border-radius: 0.5em;
-            border: 0.2em dashed red;
             font-size: 1em;
             color: red;
             background-color: rgb(14, 39, 31);
@@ -79,12 +65,16 @@ body{
             color:rgb(153, 255, 0);
             background-image: url("./spamer.jpg");
 
-            margin-top: 0.6em;
-            border-radius: 0.5em;
+            margin-top: 2%;
+            border-radius: 30%;
 
-            width: 12em;
+            width: 50%;
             height: 2em;
-            font-size: 1.6em;
+            font-size: 150%;
+
+            position: absolute;
+            top: 91%;
+            left: 25%;
         }
             #btn_send_spam:hover{
                 transform: scale(0.95);
@@ -93,10 +83,9 @@ body{
         /*SPAM ENVIADO*/
         #aparece{
             font-family: "Winky Rough", sans-serif;
-            font-size: 5em;
+            font-size: 600%;
             color: rgb(255, 0, 0);
             display: none;
-            margin-top: 2em;
 
         }
         #btn_return{
@@ -106,11 +95,11 @@ body{
             color:rgb(153, 255, 0);
             background-image: url("./spamer.jpg");
 
-            border-radius: 0.5em;
+            border-radius: 30%;
 
             width: 10em;
             height: 2em;
-            font-size: 1.6em;
+            font-size: 200%;
         }
             #btn_return:hover{
                 transform: scale(0.9);

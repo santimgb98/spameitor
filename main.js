@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 //const prompt = require('prompt-sync')();
 
 export async function sendSpam(receiver, affair, message, numberToMessages){
@@ -42,8 +42,8 @@ export async function sendSpam(receiver, affair, message, numberToMessages){
     }
   }
 }
-
-async function main(){
+sendSpam("santimgb98@gmail.com","sdfasdf","sdfasdf",3);
+/*async function main(){
   while(true){
 
     console.log(`*********** SPAM EMAIL *************
@@ -66,4 +66,4 @@ async function main(){
     }
   }
 }
-main();
+main();*/

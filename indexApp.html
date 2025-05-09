@@ -13,27 +13,27 @@
     <div id="content">
 
         <!--A quién se le envía el spam-->
-        <form action="">
-            <label>A quién enviar spam?: </label>
-            <input id="input_receptor" type="text"/>
+        <form class="q_form">
+            <label class="indicador">A quién enviar spam?: </label>
+            <input id="input_receptor" class="input" type="text"/>
         </form>
         
         <!--Asunto-->
-        <form action="">
-            <label">Asunto: </label>
-            <input id="input_asunto" type="text"/>
+        <form class="q_form">
+            <label class="indicador">Asunto: </label>
+            <input id="input_asunto" class="input" type="text"/>
         </form>
         
         <!--Número de mensajes-->
-        <form action="">
-            <label>Número de mensajes: </label>
-            <input id="input_mensajes" type="text"/>
+        <form class="q_form">
+            <label class="indicador">Nº mensajes: </label>
+            <input id="input_mensajes" class="input" type="text"/>
         </form>
 
         <!--Mensage-->
-        <form action="">
-            <label>Mensaje: </label>
-            <input id="input_mensaje" type="text"/>
+        <form class="q_form">
+            <label class="indicador">Mensaje: </label>
+            <input id="input_mensaje" class="input" type="text"/>
         </form>
 
         <!--Send button-->
@@ -43,8 +43,8 @@
         <p id="aparece">SPAM ENVIADO</p>
         <button id="btn_return">return</button>
     </div>
-    <script>import{sendSpam} from "./main"</script>
     <script src="./js/script.js"></script>
     <script src="./main.js"></script>
+    <script>import {sendSpam} from "../main"</script>
 </body>
 </html>
